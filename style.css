@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #252525;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #ffffff;
+  width: 400px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.2s;
+}
+
+.input-area input:focus {
+  border-color: #4e73df;
+}
+
+.input-area button {
+  padding: 10px 15px;
+  border: none;
+  background: #4e73df;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.input-area button:hover {
+  background: #2e59d9;
+}
+
+.task-list {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.task-list li {
+  background: #f8f9fc;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.task-counter {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+/*Quando clicar no texto do span, ele ficará com uma linha em cima*/
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.btn-delete{
+  background-color: red;
+  color: #ffffff;
+  border: none;
+  height: 25px;
+  width: 90px;
+  border-radius: 9px;
+}
+
+.btn-delete:hover{
+  background-color: rgb(201, 0, 0);
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f9fc;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+
+.contador {
+  margin: 15px;
+  font-size: 16px;
+  color: #525252;
+  text-align: center;
+}
